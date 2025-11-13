@@ -5,6 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+
+    <!-- Подключение CSS-файлов в правильном порядке -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a href="#" class="header__link header__link_active">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__logo">
+        <img
+          src="./images/logo-black.svg"
+          alt="Логотип проекта Оно тебе надо"
+          class="header__logo-image"
+        />
+      </a>
+
+      <address class="address header__address">
+        <a href="tel:+70000000">+7(000)000-00-00</a><br />
+        <a href="mailto:info@example.com">info@example.com</a><br />
+        <span>г. Москва, ул. Примерная, д. 1</span>
+      </address>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+      <!-- Секция обложки -->
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text">оно</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
+      </section>
+
+      <!-- Секция лотов -->
+      <section class="lots">
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">
+                  Неудавшийся режиссёр снял картину о вере в мечту, которая побила все
+                  рекорды.
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title">Книга, которую не издавали 10 лет</h3>
+                <p class="card__text">
+                  Автор не сдавался и в итоге получил мировое признание и любовь читателей.
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title">Картина, которую не приняли в галерею</h3>
+                <p class="card__text">
+                  Сегодня эта работа стоит миллионы и стала символом свободы искусства.
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="lots__look-more-link">Посмотреть больше</a>
+      </section>
+
+      <!-- Секция об аукционе -->
+      <section class="about">
+        <div class="about__column about__column_left">
+          <div class="about__logo">
+            <img
+              src="./images/logo-white.svg"
+              alt="Белый логотип проекта Оно тебе надо"
+              class="about__logo-image"
+            />
+          </div>
+        </div>
+        <div class="about__column about__column_right">
+          <h2 class="about__title">Об аукционе</h2>
+          <div class="about__text">
+            <p>
+              Здесь вы найдёте истории вещей, в которые никто не верил. Мы доказываем, что
+              вера в себя и настойчивость способны изменить судьбу даже самых неожиданных
+              предметов.
+            </p>
+            <p>
+              На нашем аукционе каждая вещь — это символ преодоления и вдохновения. Возможно,
+              именно она станет вашей.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <address class="address footer__address">
+        <a href="tel:+70000000">+7(000)000-00-00</a><br />
+        <a href="mailto:info@example.com">info@example.com</a><br />
+        <span>г. Москва, ул. Примерная, д. 1</span>
+      </address>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link footer__menu-link_active">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link"
+            ><img
+              src="./images/yt.svg"
+              alt="YouTube"
+              class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link"
+            ><img
+              src="./images/vk.svg"
+              alt="VK"
+              class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link"
+            ><img
+              src="./images/pinterest.svg"
+              alt="Pinterest"
+              class="footer__social-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
